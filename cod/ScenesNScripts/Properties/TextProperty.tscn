@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
+
+[node name="Name" type="HBoxContainer"]
+margin_right = 404.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 100.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 100, 100 )
+custom_fonts/normal_font = ExtResource( 1 )
+text = "Name:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 104.0
+margin_right = 404.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 300, 200 )
+custom_fonts/font = ExtResource( 1 )
+text = "Name
+"

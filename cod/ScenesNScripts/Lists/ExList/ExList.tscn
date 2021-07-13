@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ScenesNScripts/Lists/ExList/ExList.gd" type="Script" id=1]
+[ext_resource path="res://ScenesNScripts/Lists/ItemList/ItemList.tscn" type="PackedScene" id=2]
+
+[node name="ExList" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" parent="." instance=ExtResource( 2 )]
+
+[node name="ChangeButton" parent="ItemList/ExerciseList" index="1"]
+flat = true
+next_scene = "res://ScenesNScripts/ExerciseCreatorScreen/ExerciseCreatorScreen.tscn"
+
+[editable path="ItemList"]

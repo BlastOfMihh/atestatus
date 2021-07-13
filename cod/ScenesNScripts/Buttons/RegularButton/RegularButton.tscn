@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
+
+[node name="RegularButton" type="Button"]
+margin_right = 404.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 404, 70 )
+custom_fonts/font = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

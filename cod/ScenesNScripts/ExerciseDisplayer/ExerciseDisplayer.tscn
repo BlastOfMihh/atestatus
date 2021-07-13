@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ScenesNScripts/ExerciseDisplayer/ExerciseDisplayer.gd" type="Script" id=1]
+
+[node name="ExerciseDisplayer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CenterContainer"]
+margin_left = 335.0
+margin_top = 630.0
+margin_right = 384.0
+margin_bottom = 650.0
+text = "LOAD"
+
+[connection signal="pressed" from="CenterContainer/Button" to="." method="_on_Button_pressed"]
