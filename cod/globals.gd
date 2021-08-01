@@ -1,6 +1,7 @@
 extends Node
 
 const EX_DIR="user://exercises"
+const WO_DIR="user://workouts"
 # var save_path=EX_DIR+"save.dat"
 
 
@@ -9,6 +10,8 @@ func _ready():
 	var dir=Directory.new()
 	if !dir.dir_exists(Globals.EX_DIR) :
 		dir.make_dir_recursive(Globals.EX_DIR)
+	if !dir.dir_exists(Globals.WO_DIR) :
+		dir.make_dir_recursive(Globals.WO_DIR)
 
 func get_ex_list():
 	var ans=[]

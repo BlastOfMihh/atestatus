@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ScenesNScripts/Buttons/RegularButton/RegularButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://CenterContainer.gd" type="Script" id=2]
+
+[node name="WoPlay" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+list_of_exs = null
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 158.0
+margin_top = 531.0
+margin_right = 562.0
+margin_bottom = 749.0
+
+[node name="Name" parent="VBoxContainer" instance=ExtResource( 1 )]
+text = "Salut"
+
+[node name="RegularButton" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 74.0
+margin_bottom = 144.0
+text = "Time left: 00"
+
+[node name="RegularButton2" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 148.0
+margin_bottom = 218.0
