@@ -1,2 +1,2 @@
 # atestatus
-cv chestie 
+A game inspired by stickman-hero.
